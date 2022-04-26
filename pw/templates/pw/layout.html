@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PW</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pw/estilo.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Programação Web</h1>
+
+        <a href="{% url 'pw:home' %}">Intro</a>
+        <a href="{% url 'pw:sobre' %}">Sobre</a>
+    </header>
+
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        ULHT
+    </footer>
+
+</body>
+</html>
